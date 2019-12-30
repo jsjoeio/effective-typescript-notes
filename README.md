@@ -49,11 +49,51 @@ Yes, I know you can do that with [TypeScript Playground](https://www.typescriptl
 
 ### Chapter 2 - TypeScript's Type System
 
-add some thoughts here
+This chapter dives into the "nuts and bolts of TypeScript's type system" so that you understand how things work. The beginning felt boring for the same reason I mentioned about Chapter 1 but then towards the middle/end of the chapter, I started learning new things. Highlights:
 
-Key Takeways:
-- bullet one
-- bullet two 
+> ..."excess property checking" , which helps catch an important class of errors that the structural type system would otherwise miss. (Vanderkam 47)
+
+I knew of this feature, but didn't know the technical name. The example he gives is with this snippet:
+
+```typescript
+// (Vanderkam 46)
+interface Room {
+  numDoors: number;
+  ceilingHeightFt: number;
+}
+
+const r: Room = {
+  numDoors: 1,
+  ceilingHeightFt: 10,
+  elephant: 'present',
+}
+```
+
+When TypeScript complains by saying 'elephant' does not exist in type 'Room', this is excess property checking. It makes sense because 'elephant' is an excess, or extra, property on the object `r` but not present in the interface. 
+
+> Prefixing interface types with `I` is commin in C#, and this convention made some inroads in the early days of TypeScript. But it is considered bad style today because it's unnecessary, adds little value and is not consistently followed in the standard libraries. (Vanderkam 53)
+
+I have done this in past projects but didn't realize it was considered bad practice. Now I know!
+
+> You can express something _like_ a typle using an interface:
+```typescript
+// (Vanderkam 55)
+interface Tuple {
+  0: number;
+  1: number;
+  length: 2;
+}
+
+const t: Tuple = [10, 20];
+```
+
+I did not know this was possible! While it's feasible, it is not recommended because it "drops all the tuple methods like `concat`."
+
+> TypeScript uses [declaration] merging to get different types for the different versions of JavaScript's standard library. (Vanderkam 55)
+
+I knew about "declaration merging" but I couldn't think of a good use case. Here, Vanderkam explains how it's useful for the different standards of JS because as methods get added to proper interfaces like `Array`, TypeScript can merge the interface declarations into 1, which ensures the interface has both older and newer methods. 
+
+(stopped on 56)
 
 
 ### Chapter 3 - Type Inference
