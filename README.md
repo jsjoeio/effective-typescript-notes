@@ -9,6 +9,8 @@ I pre-ordered this book at the recommendation from my friend [@swyx](https://git
 ##### Table of Contents  
 * [Notes](#notes)
   * [Chapter 1 - Getting to Know TypeScript](#chapter-1-getting-to-know-typescript)
+  * [Chapter 2 - TypeScript's Type System](#chapter-2-typescripts-type-system)
+  * [Chapter 2 - TypeScript's Type System](#chapter-3-type-inference)
 * [Purchase the Book](#purchase-the-book) 
 * [Get in touch](#get-in-touch)
 
@@ -24,6 +26,76 @@ add some thoughts here
 Key Takeways:
 - bullet one
 - bullet two 
+
+
+### Chapter 2 - TypeScript's Type System
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 3 - Type Inference
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 4 - Type Design
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 5 - Working with any
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 6 - Type Declarations and @types
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 7 - Writing and Running Your Code
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+
+### Chapter 8 - Migrating to TypeScript
+
+add some thoughts here
+
+Key Takeways:
+- bullet one
+- bullet two 
+
+### Overall Thoughts
+
+What are my overall thoughts?
+
+### Recommend the Book?
+Do I recommend it 
 
 ## Purchase the Book
 
