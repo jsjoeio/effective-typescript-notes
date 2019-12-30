@@ -29,11 +29,22 @@ This is a collection of my thoughts from each chapter in the book, along with my
 
 ### Chapter 1 - Getting to Know TypeScript
 
-add some thoughts here
+As you can guess by the title of this chapter, the author summarizes the basic concepts of TypeScript. This chapter was pretty boring because I previously read ["Programming TypeScript" by Boris Cherny](https://amzn.to/2tXQ3vB). Here are some things I highlighted: 
 
-Key Takeways:
-- bullet one
-- bullet two 
+> TypeScript's type system _models_ the runtime behavior of JavaScript. (Vanderkam 5)
+
+Good reminder. 
+
+> So long as your TypeScript is valid JavaScript (and often even if it isn't), the TypeScript compiler will produce output. **it's better to say that your code has errors, or that it "doesn't type check."** (Vanderkam 11)
+
+I liked the way this is phrased. Helpful to have the correct vocabulary to describe your code.
+
+
+My personal notes:
+
+> I want to "just write TS" without worrying about a `tsconfig`, ESlint or Prettier. 
+
+Yes, I know you can do that with [TypeScript Playground](https://www.typescriptlang.org/play/index.html), but I want some time of framework or library that comes with those three out of the box. 
 
 
 ### Chapter 2 - TypeScript's Type System
@@ -100,7 +111,15 @@ Key Takeways:
 
 ### Overall Thoughts
 
-What are my overall thoughts?
+🙁
+
+I may have had too high of expectations for the book In the Preface, the author says,
+> My goal with this book is not to teach you TypeScript or JavaScript but to hel pyou advance from a beginning or intermediate user to an expert.
+
+When I started reading this book, I had already been studying TypeScript heavily for the last 3 months. If I had read this book at the beginning of those 3 months, my opinion would probably be different. I do consider myself an intermediate user of TypeScript, but I don't think this book has helped me reach a level of "expert." Although the author and I may have differing opinions on levels of expertise.
+
+Overall, this book does a great job at focusing on specific topics based on the way it's organized. It provides a lot of useful tips along with examples. It does cover more advanced topics and does a great job explaining the _why_ behind opinions or the way things work.
+
 
 ### Recommend the Book?
 Do I recommend it 
