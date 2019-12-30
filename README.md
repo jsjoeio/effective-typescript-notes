@@ -7,12 +7,20 @@
 I pre-ordered this book at the recommendation from my friend [@swyx](https://github.com/swyx). I read the book in December 2019. 
 
 ##### Table of Contents  
+
 * [Notes](#notes)
-  * [Chapter 1 - Getting to Know TypeScript](#chapter-1-getting-to-know-typescript)
-  * [Chapter 2 - TypeScript's Type System](#chapter-2-typescripts-type-system)
-  * [Chapter 2 - TypeScript's Type System](#chapter-3-type-inference)
-* [Purchase the Book](#purchase-the-book) 
-* [Get in touch](#get-in-touch)
+   + [Chapter 1 - Getting to Know TypeScript](#chapter-1---getting-to-know-typescript)
+   + [Chapter 2 - TypeScript's Type System](#chapter-2---typescripts-type-system)
+   + [Chapter 3 - Type Inference](#chapter-3---type-inference)
+   + [Chapter 4 - Type Design](#chapter-4---type-design)
+   + [Chapter 5 - Working with any](#chapter-5---working-with-any)
+   + [Chapter 6 - Type Declarations and @types](#chapter-6---type-declarations-and-types)
+   + [Chapter 7 - Writing and Running Your Code](#chapter-7---writing-and-running-your-code)
+   + [Chapter 8 - Migrating to TypeScript](#chapter-8---migrating-to-typescript)
+   + [Overall Thoughts](#overall-thoughts)
+   + [Recommend the Book?](#recommend-the-book)
+ * [Purchase the Book](#purchase-the-book)
+ * [Get in touch](#get-in-touch)
 
 
 ## Notes
