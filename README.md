@@ -93,8 +93,64 @@ I did not know this was possible! While it's feasible, it is not recommended bec
 
 I knew about "declaration merging" but I couldn't think of a good use case. Here, Vanderkam explains how it's useful for the different standards of JS because as methods get added to proper interfaces like `Array`, TypeScript can merge the interface declarations into 1, which ensures the interface has both older and newer methods. 
 
-(stopped on 56)
+> Are you publishing type declarations for your API? Then it might be helpful for your users to be able to merge in new fields via an `interface` when the API changes. So use `interface`. But for a type that's used internally in your project, declaration merging is likely to be a mistake. So prefer `type`. (Vanderkam 56)
 
+I think this is the most clear explanation of the `interface` vs. `type` debate.  
+
+> Mapped types are the type system equivalent of looping over the fields in an array. 
+
+Here's an example with a built-in type called `Pick`:
+
+```typescript
+type Pick<T, K> = { [k in K]: T[k] };
+
+// example
+type TopNavState = Pick<State, 'userId' | 'pageTitle' | 'recentFiles'>;
+```
+
+Another slick example:
+
+```typescript
+// (Vanderkam 60)
+interface SaveAction {
+  type: 'save';
+  // ...
+}
+
+interface LoadAction {
+  type: 'load';
+  // ...
+}
+
+type Action = SaveAction | LoadAction;
+
+// Repeated types
+// ❌ type ActionType = 'save' | 'load'; 
+
+// Better! DRY!
+// ✅ you index into the Action union
+type ActionType = Action['type'];
+```
+
+A good example of a `Record` type:
+
+```typescript
+// (Vanderkam 67)
+type Vec3D = Record<'x' | 'y' | 'z', number>;
+
+// Results in this 
+/*
+type Vec3D = {
+  x: number;
+  y: number;
+  z: number;
+}
+*/
+```
+
+> If your function does not mutate its parameters, you should declare them `readonly`. (Vanderkam 73)
+
+I don't think I ever thought about doing this but seems really smart and easy!
 
 ### Chapter 3 - Type Inference
 
