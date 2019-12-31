@@ -238,7 +238,10 @@ Overall, this book does a great job at focusing on specific topics based on the 
 
 
 ### Recommend the Book?
-Do I recommend it 
+
+It depends.
+
+What is your level of TypeScript knowledge? If you've read "Programming TypeScript" and been working with TypeScript for a while, then **no** I would not recommend it. If you are a beginner to TypeScript and want to learn practical knowledge to help you reach the next level, then **yes** I would recommend it. 
 
 ## Purchase the Book
 
