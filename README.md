@@ -218,20 +218,12 @@ I didn't highlight anything in this chapter.
 
 ### Chapter 7 - Writing and Running Your Code
 
-add some thoughts here
-
-Key Takeways:
-- bullet one
-- bullet two 
+I didn't highlight anything in this chapter. 
 
 
 ### Chapter 8 - Migrating to TypeScript
 
-add some thoughts here
-
-Key Takeways:
-- bullet one
-- bullet two 
+I didn't highlight anything in this chapter. 
 
 ### Overall Thoughts
 
