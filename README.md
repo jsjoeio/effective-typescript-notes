@@ -154,12 +154,15 @@ I don't think I ever thought about doing this but seems really smart and easy!
 
 ### Chapter 3 - Type Inference
 
-add some thoughts here
+A few things that I highlighted in this chapter:
 
-Key Takeways:
-- bullet one
-- bullet two 
+> An experienced TypeScript developer will use relatively few annotations (but use them to great effect), while a beginner may drown their code in redundant type annotations. (Vanderkam 81)
 
+A friendly reminder to myself. 
+
+> Consider using explicit annotations for object literals and function return types even when they can be inferred. This will help prevent implementation errors from surfacing in user code. (Vanderkam 87)
+
+This explains the ESLint rule "explicit-return-types" that I didn't understand previously. With this quote, now i get it. 
 
 ### Chapter 4 - Type Design
 
