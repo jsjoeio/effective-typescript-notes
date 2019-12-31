@@ -129,6 +129,7 @@ type Action = SaveAction | LoadAction;
 
 // Better! DRY!
 // ✅ you index into the Action union
+// Boris Cherny calls this "keyin" operator
 type ActionType = Action['type'];
 ```
 
