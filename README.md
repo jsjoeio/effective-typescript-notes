@@ -166,11 +166,44 @@ This explains the ESLint rule "explicit-return-types" that I didn't understand p
 
 ### Chapter 4 - Type Design
 
-add some thoughts here
+Highlights:
 
-Key Takeways:
-- bullet one
-- bullet two 
+Actually a quote from someone else named Jon Postel, called Postel's Law:
+
+> TCP implementation should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others. (Vanderkam 122)
+
+Vanderkam goes on to elaborate using function contracts. Be broad in terms of input you accept, but be specific in what they produce. 
+
+A quote from Vanderkam's professor:
+
+> when your code and your comments disagree, they're both wrong (Vanderkam 125)
+
+Brands vs Tags? 
+
+You can create a discriminated union type by adding a "tag" so TypeScript knows to differentiate the two, but I don't quite understand how that is different from "branding" your types. Seems like the same idea. Here are some examples:
+
+```typescript
+
+// Here the tag is "kind"
+interface Circle {
+  color: string;
+  kind: 'circle';
+}
+
+interface Square {
+  color: string;
+  kind: 'square';
+}
+
+type Shape = Circle | Square;
+
+// (Vanderkam 152)
+// Here there is a "_brand" property
+type Meters = number & {_brand: 'meters'};
+type Seconds = number & {_brand: 'seconds'};
+```
+
+To me, they look the same. I'll have to investigate further.
 
 
 ### Chapter 5 - Working with any
