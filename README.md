@@ -208,20 +208,12 @@ To me, they look the same. I'll have to investigate further.
 
 ### Chapter 5 - Working with any
 
-add some thoughts here
-
-Key Takeways:
-- bullet one
-- bullet two 
+I didn't highlight anything in this chapter.
 
 
 ### Chapter 6 - Type Declarations and @types
 
-add some thoughts here
-
-Key Takeways:
-- bullet one
-- bullet two 
+I didn't highlight anything in this chapter. 
 
 
 ### Chapter 7 - Writing and Running Your Code
